@@ -8,7 +8,7 @@ const redirect = () => {
   dispatch(actions.setState(random(16)));
 };
 
-const callback = url => {
+const callback = (url) => {
   dispatch(actions.discordTokenSaga());
   dispatch(actions.setCode(queryString.parse(url)));
 };
@@ -21,5 +21,5 @@ const logout = () => {
 export default {
   redirect,
   callback,
-  logout
+  logout,
 };

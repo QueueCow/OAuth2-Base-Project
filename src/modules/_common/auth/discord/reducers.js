@@ -6,7 +6,7 @@ const initialState = {
   authenticated: false,
   accessToken: null,
   refreshToken: null,
-  expires: null
+  expires: null,
 };
 
 export default (state = initialState, action) => {
@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         code: action.payload.code,
-        callbackState: action.payload.callbackState
+        callbackState: action.payload.callbackState,
       };
     case types.SET_TOKEN:
       return {
@@ -25,7 +25,7 @@ export default (state = initialState, action) => {
         authenticated: true,
         accessToken: action.payload.accessToken,
         refreshToken: action.payload.refreshToken,
-        expires: action.payload.expires
+        expires: action.payload.expires,
       };
     case types.LOGOUT:
       return {
@@ -33,7 +33,7 @@ export default (state = initialState, action) => {
         authenticated: false,
         accessToken: null,
         refreshToken: null,
-        expires: null
+        expires: null,
       };
     case types.ERROR:
       return initialState;

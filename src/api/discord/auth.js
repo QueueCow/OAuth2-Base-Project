@@ -7,13 +7,13 @@ const redirect_uri = () => {
 
 const baseURL = 'https://discordapp.com/api/oauth2';
 
-export const authorize_GET = state => {
+export const authorize_GET = (state) => {
   const qParams = [
     `client_id=${process.env.REACT_APP_CLIENT_ID}`,
     `redirect_uri=${encodeURIComponent(redirect_uri())}`,
     `response_type=code`,
     `scope=identify guilds email`,
-    `state=${state}`
+    `state=${state}`,
   ].join('&');
 
   const url = baseURL + '/authorize?' + qParams;
@@ -21,7 +21,7 @@ export const authorize_GET = state => {
   return url;
 };
 
-export const token_POST = code => {
+export const token_POST = (code) => {
   const url = baseURL + '/token';
 
   const body = new FormData();
@@ -34,13 +34,13 @@ export const token_POST = code => {
 
   const headers = {
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    }
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
   };
 
   return {
     url,
     body,
-    headers
+    headers,
   };
 };

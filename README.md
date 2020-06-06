@@ -1,4 +1,16 @@
-# Moo. QueueCow's Basic React App includes:
+# Setup
+
+You should read the article for this project first:
+https://medium.com/p/e2f138e82a5f/edit
+
+`1.) Add Client ID/Secret to .env`
+
+`2.) npm install`
+
+`3.) npm start`
+
+
+# QueueCow's OAuth2 Base-Project for React includes:
 
 ## Features
 

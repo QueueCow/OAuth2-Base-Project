@@ -4,31 +4,31 @@ const discordRedirectSaga = () => ({ type: types.DISCORD_REDIRECT_SAGA });
 
 const discordTokenSaga = () => ({ type: types.DISCORD_TOKEN_SAGA });
 
-const setLocation = location => ({
+const setLocation = (location) => ({
   type: types.SET_LOCATION,
-  payload: { location }
+  payload: { location },
 });
 
-const setState = state => ({
+const setState = (state) => ({
   type: types.SET_STATE,
-  payload: { state }
+  payload: { state },
 });
 
-const setCode = params => ({
+const setCode = (params) => ({
   type: types.SET_CODE,
   payload: {
     callbackState: params.state,
-    code: params.code
-  }
+    code: params.code,
+  },
 });
 
-const setToken = data => ({
+const setToken = (data) => ({
   type: types.SET_TOKEN,
   payload: {
     accessToken: data.access_token,
     refreshToken: data.refresh_token,
-    expires: data.expires_in
-  }
+    expires: data.expires_in,
+  },
 });
 
 const logout = () => ({ type: types.LOGOUT });
@@ -43,5 +43,5 @@ export default {
   setCode,
   setToken,
   logout,
-  error
+  error,
 };

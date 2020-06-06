@@ -20,7 +20,7 @@ const Layout = styled.div`
 
 const UserMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = event => setAnchorEl(event.currentTarget);
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
   const logout = () => operations.logout();
 
@@ -29,7 +29,6 @@ const UserMenu = () => {
   const getUserName = async () => {
     const req = user_GET(accessToken);
     const result = await axios.get(req.url, req.headers);
-    console.log(result.data);
     setData(result.data);
   };
 
