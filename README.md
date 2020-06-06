@@ -1,7 +1,7 @@
 # Setup
 
 You should read the article for this project first:
-https://medium.com/p/e2f138e82a5f/edit
+https://medium.com/@beuschel.marcel/oauth2-base-project-for-react-e2f138e82a5f
 
 `1.) Add Client ID/Secret to .env`
 
