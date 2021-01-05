@@ -4,7 +4,7 @@
   "private": false,
   "dependencies": {
     "@material-ui/core": "^4.9.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "notistack": "^0.9.8",
     "query-string": "^6.10.1",
     "react": "^16.12.0",
