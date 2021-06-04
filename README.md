@@ -10,7 +10,7 @@ https://medium.com/@beuschel.marcel/oauth2-base-project-for-react-e2f138e82a5f
 `3.) npm start`
 
 
-# OAuth2 Base-Project for React includes:
+# Discord-Integration-for-React includes:
 
 ## Features
 
